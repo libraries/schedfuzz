@@ -1,0 +1,39 @@
+[package]
+name = "schedfuzz-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+ckb-chain-spec-patch = { package = "ckb-chain-spec", git = "https://github.com/libraries/ckb", branch = "old_patch" }
+ckb-error-patch = { package = "ckb-error", git = "https://github.com/libraries/ckb", branch = "old_patch" }
+ckb-script-patch = { package = "ckb-script", git = "https://github.com/libraries/ckb", branch = "old_patch", default-features = false }
+ckb-traits-patch = { package = "ckb-traits", git = "https://github.com/libraries/ckb", branch = "old_patch" }
+ckb-types-patch = { package = "ckb-types", git = "https://github.com/libraries/ckb", branch = "old_patch" }
+
+ckb-chain-spec-sched = { package = "ckb-chain-spec", git = "https://github.com/libraries/ckb", branch = "new_spawn" }
+ckb-error-sched = { package = "ckb-error", git = "https://github.com/libraries/ckb", branch = "new_spawn" }
+ckb-script-sched = { package = "ckb-script", git = "https://github.com/libraries/ckb", branch = "new_spawn", default-features = false }
+ckb-traits-sched = { package = "ckb-traits", git = "https://github.com/libraries/ckb", branch = "new_spawn" }
+ckb-types-sched = { package = "ckb-types", git = "https://github.com/libraries/ckb", branch = "new_spawn" }
+
+[dependencies.schedfuzz]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[profile.release]
+debug = 1
+
+[[bin]]
+name = "fuzz_target_1"
+path = "fuzz_targets/fuzz_target_1.rs"
+test = false
+doc = false
