@@ -12,6 +12,7 @@ mod patch {
         core::{
             capacity_bytes,
             cell::{CellMetaBuilder, ResolvedTransaction},
+            hardfork::{HardForks, CKB2021, CKB2023},
             Capacity, Cycle, HeaderView, ScriptHashType, TransactionBuilder, TransactionInfo,
         },
         h256,
@@ -99,7 +100,13 @@ mod patch {
         };
 
         let provider = MockDataLoader {};
-        let consensus = ConsensusBuilder::default().build();
+        let hardfork_switch = HardForks {
+            ckb2021: CKB2021::new_dev_default(),
+            ckb2023: CKB2023::new_dev_default(),
+        };
+        let consensus = ConsensusBuilder::default()
+            .hardfork_switch(hardfork_switch)
+            .build();
         let tx_verify_env =
             TxVerifyEnv::new_submit(&HeaderView::new_advanced_builder().epoch(0.pack()).build());
         let verifier = TransactionScriptsVerifier::new(
@@ -122,6 +129,7 @@ mod sched {
         core::{
             capacity_bytes,
             cell::{CellMetaBuilder, ResolvedTransaction},
+            hardfork::{HardForks, CKB2021, CKB2023},
             Capacity, Cycle, HeaderView, ScriptHashType, TransactionBuilder, TransactionInfo,
         },
         h256,
@@ -209,7 +217,13 @@ mod sched {
         };
 
         let provider = MockDataLoader {};
-        let consensus = ConsensusBuilder::default().build();
+        let hardfork_switch = HardForks {
+            ckb2021: CKB2021::new_dev_default(),
+            ckb2023: CKB2023::new_dev_default(),
+        };
+        let consensus = ConsensusBuilder::default()
+            .hardfork_switch(hardfork_switch)
+            .build();
         let tx_verify_env =
             TxVerifyEnv::new_submit(&HeaderView::new_advanced_builder().epoch(0.pack()).build());
         let verifier = TransactionScriptsVerifier::new(
@@ -223,7 +237,7 @@ mod sched {
 }
 
 fuzz_target!(|data: &[u8]| {
-    // fuzzed code goes here
+    // Fuzzed code goes here
     let r_patch = patch::run(data, 0).map_err(|e| format!("{:?}", e));
     let r_sched = sched::run(data, 0).map_err(|e| format!("{:?}", e));
     assert_eq!(r_patch, r_sched);
