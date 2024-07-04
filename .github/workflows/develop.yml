@@ -1,0 +1,22 @@
+name: develop
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  develop-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test
+        run: |
+          cargo run
+
+  develop-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test
+        run: |
+          cargo run
