@@ -144,7 +144,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "ckb-chain-spec"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "cacache",
  "ckb-constant 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -188,7 +188,7 @@ dependencies = [
 [[package]]
 name = "ckb-channel"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "crossbeam-channel",
 ]
@@ -204,7 +204,7 @@ dependencies = [
 [[package]]
 name = "ckb-constant"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 
 [[package]]
 name = "ckb-constant"
@@ -214,7 +214,7 @@ source = "git+https://github.com/libraries/ckb?branch=old_patch#04d2cd9ee4959cb8
 [[package]]
 name = "ckb-crypto"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-fixed-hash 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "faster-hex",
@@ -240,7 +240,7 @@ dependencies = [
 [[package]]
 name = "ckb-dao-utils"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "byteorder",
  "ckb-error 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -260,7 +260,7 @@ dependencies = [
 [[package]]
 name = "ckb-error"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "anyhow",
  "ckb-occupied-capacity 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -282,7 +282,7 @@ dependencies = [
 [[package]]
 name = "ckb-fixed-hash"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-fixed-hash-core 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "ckb-fixed-hash-macros 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -300,7 +300,7 @@ dependencies = [
 [[package]]
 name = "ckb-fixed-hash-core"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb_schemars",
  "faster-hex",
@@ -322,7 +322,7 @@ dependencies = [
 [[package]]
 name = "ckb-fixed-hash-macros"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-fixed-hash-core 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "proc-macro2",
@@ -344,7 +344,7 @@ dependencies = [
 [[package]]
 name = "ckb-gen-types"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "cfg-if",
  "ckb-error 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -372,7 +372,7 @@ dependencies = [
 [[package]]
 name = "ckb-hash"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "blake2b-ref",
  "blake2b-rs",
@@ -390,7 +390,7 @@ dependencies = [
 [[package]]
 name = "ckb-jsonrpc-types"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-types 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "ckb_schemars",
@@ -414,7 +414,7 @@ dependencies = [
 [[package]]
 name = "ckb-logger"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "log",
 ]
@@ -439,7 +439,7 @@ dependencies = [
 [[package]]
 name = "ckb-occupied-capacity"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-occupied-capacity-core 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "ckb-occupied-capacity-macros 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -457,7 +457,7 @@ dependencies = [
 [[package]]
 name = "ckb-occupied-capacity-core"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "serde",
 ]
@@ -473,7 +473,7 @@ dependencies = [
 [[package]]
 name = "ckb-occupied-capacity-macros"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-occupied-capacity-core 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
  "quote",
@@ -493,7 +493,7 @@ dependencies = [
 [[package]]
 name = "ckb-pow"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "byteorder",
  "ckb-hash 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -519,7 +519,7 @@ dependencies = [
 [[package]]
 name = "ckb-rational"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "numext-fixed-uint",
  "serde",
@@ -537,7 +537,7 @@ dependencies = [
 [[package]]
 name = "ckb-resource"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-system-scripts",
  "ckb-types 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -565,7 +565,7 @@ dependencies = [
 [[package]]
 name = "ckb-script"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "byteorder",
  "ckb-chain-spec 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
@@ -611,7 +611,7 @@ dependencies = [
 [[package]]
 name = "ckb-traits"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "ckb-types 0.117.0-pre (git+https://github.com/libraries/ckb?branch=new_spawn)",
 ]
@@ -627,7 +627,7 @@ dependencies = [
 [[package]]
 name = "ckb-types"
 version = "0.117.0-pre"
-source = "git+https://github.com/libraries/ckb?branch=new_spawn#e875acd6098aa651213878ea0331b7f5ba21fa0c"
+source = "git+https://github.com/libraries/ckb?branch=new_spawn#63afcf40bae2f68ee6d1e2eee311109b0fad0543"
 dependencies = [
  "bit-vec",
  "bytes",
@@ -1390,9 +1390,9 @@ dependencies = [
 
 [[package]]
 name = "reflink-copy"
-version = "0.1.18"
+version = "0.1.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6d731e7e3ebfcf422d96b8473e507d5b64790900dd5464772d38d1da9da24d3a"
+checksum = "dc31414597d1cd7fdd2422798b7652a6329dda0fe0219e6335a13d5bcaa9aeb6"
 dependencies = [
  "cfg-if",
  "rustix",
@@ -1786,9 +1786,9 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "windows"
-version = "0.57.0"
+version = "0.58.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12342cb4d8e3b046f3d80effd474a7a02447231330ef77d71daa6fbc40681143"
+checksum = "dd04d41d93c4992d421894c18c8b43496aa748dd4c081bac0dc93eb0489272b6"
 dependencies = [
  "windows-core",
  "windows-targets",
@@ -1796,21 +1796,22 @@ dependencies = [
 
 [[package]]
 name = "windows-core"
-version = "0.57.0"
+version = "0.58.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d2ed2439a290666cd67ecce2b0ffaad89c2a56b976b736e6ece670297897832d"
+checksum = "6ba6d44ec8c2591c134257ce647b7ea6b20335bf6379a27dac5f1641fcf59f99"
 dependencies = [
  "windows-implement",
  "windows-interface",
  "windows-result",
+ "windows-strings",
  "windows-targets",
 ]
 
 [[package]]
 name = "windows-implement"
-version = "0.57.0"
+version = "0.58.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9107ddc059d5b6fbfbffdfa7a7fe3e22a226def0b2608f72e9d552763d3e1ad7"
+checksum = "2bbd5b46c938e506ecbce286b6628a02171d56153ba733b6c741fc627ec9579b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1819,9 +1820,9 @@ dependencies = [
 
 [[package]]
 name = "windows-interface"
-version = "0.57.0"
+version = "0.58.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29bee4b38ea3cde66011baa44dba677c432a78593e202392d1e9070cf2a7fca7"
+checksum = "053c4c462dc91d3b1504c6fe5a726dd15e216ba718e84a0e46a88fbe5ded3515"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1830,10 +1831,20 @@ dependencies = [
 
 [[package]]
 name = "windows-result"
-version = "0.1.2"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5e383302e8ec8515204254685643de10811af0ed97ea37210dc26fb0032647f8"
+checksum = "1d1043d8214f791817bab27572aaa8af63732e11bf84aa21a45a78d6c317ae0e"
 dependencies = [
+ "windows-targets",
+]
+
+[[package]]
+name = "windows-strings"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4cd9b125c486025df0eabcb585e62173c6c9eddcec5d117d3b6e8c30e2ee4d10"
+dependencies = [
+ "windows-result",
  "windows-targets",
 ]
 
