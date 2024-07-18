@@ -21,7 +21,14 @@ members = ["."]
 debug = 1
 
 [[bin]]
-name = "fuzz_target_1"
-path = "fuzz_targets/fuzz_target_1.rs"
+name = "fuzz_tx_consistency"
+path = "fuzz_targets/fuzz_tx_consistency.rs"
+test = false
+doc = false
+
+
+[[bin]]
+name = "fuzz_tx_consistency_only_valid_data1"
+path = "fuzz_targets/fuzz_tx_consistency_only_valid_data1.rs"
 test = false
 doc = false
